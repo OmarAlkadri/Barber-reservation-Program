@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.my_graduation_project">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.My_Graduation_Project">
+        <activity android:name=".sign_up.Sign_up_Activity"></activity>
+        <activity android:name=".settings.SettingActivity" />
+        <activity android:name=".rendezvous_page.RendezvousActivity" />
+        <activity android:name=".payment_page.Payment_Activity" />
+        <activity android:name=".login.Login_Activity" />
+        <activity android:name=".barbershop_show_page.Barber_Show_Activity" />
+        <activity android:name=".homepage.HomePageActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

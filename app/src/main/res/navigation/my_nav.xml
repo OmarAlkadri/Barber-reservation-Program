@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.my_graduation_project.login.ui.main.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_lodingFragment"
+            app:destination="@id/lodingFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_password_Forgot_Fragment"
+            app:destination="@id/password_Forgot_Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.my_graduation_project.sign_up.ui.main.SignUpFragment"
+        android:label="sign_up_fragment"
+        tools:layout="@layout/sign_up_fragment" >
+        <action
+            android:id="@+id/action_signUpFragment_to_lodingFragment"
+            app:destination="@id/lodingFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lodingFragment"
+        android:name="com.example.my_graduation_project.login.ui.main.LodingFragment"
+        android:label="loding_fragment"
+        tools:layout="@layout/loding_fragment" />
+    <fragment
+        android:id="@+id/password_Forgot_Fragment"
+        android:name="com.example.my_graduation_project.login.ui.main.Password_Forgot_Fragment"
+        android:label="password_forgot_fragment"
+        tools:layout="@layout/password_forgot_fragment" />
+</navigation>
