@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.my_graduation_project.R
+import com.example.my_graduation_project.databinding.HomePageFragmentBinding
 
 class HomePageFragment : Fragment() {
 
@@ -15,12 +16,13 @@ class HomePageFragment : Fragment() {
     }
 
     private lateinit var viewModel: home_page_ViewModel
+    private lateinit var binding : HomePageFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.home_page_fragment, container, false)
+        return binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

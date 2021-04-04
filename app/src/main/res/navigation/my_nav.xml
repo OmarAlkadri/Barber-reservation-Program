@@ -17,8 +17,8 @@
             android:id="@+id/action_loginFragment_to_lodingFragment"
             app:destination="@id/lodingFragment" />
         <action
-            android:id="@+id/action_loginFragment_to_password_Forgot_Fragment"
-            app:destination="@id/password_Forgot_Fragment" />
+            android:id="@+id/action_loginFragment_to_passwordForgotFragment"
+            app:destination="@id/passwordForgotFragment" />
     </fragment>
 
     <fragment
@@ -39,8 +39,8 @@
         android:label="loding_fragment"
         tools:layout="@layout/loding_fragment" />
     <fragment
-        android:id="@+id/password_Forgot_Fragment"
-        android:name="com.example.my_graduation_project.login.ui.main.Password_Forgot_Fragment"
-        android:label="password_forgot_fragment"
+        android:id="@+id/passwordForgotFragment"
+        android:name="com.example.my_graduation_project.password_forgot.ui.main.PasswordForgotFragment"
+        android:label="PasswordForgotFragment"
         tools:layout="@layout/password_forgot_fragment" />
 </navigation>

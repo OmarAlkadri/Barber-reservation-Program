@@ -26,11 +26,6 @@ class LoginFragment : Fragment() {
     ): View {
         binding = DataBindingUtil.inflate(inflater, R.layout.login_fragment, container, false)
 
-        binding.TextPassword.setOnClickListener(){
-            findNavController().navigate(R.id.action_loginFragment_to_password_Forgot_Fragment)
-
-        }
-
         binding.button2.setOnClickListener(){
             //Navigation.findNavController(requireView()).navigate(R.id.action_loginFragment_to_rendezvousFragment);
             findNavController().navigate(R.id.action_loginFragment_to_lodingFragment)
@@ -42,6 +37,10 @@ class LoginFragment : Fragment() {
         binding.newUserBtn.setOnClickListener(){
             //Navigation.findNavController(requireView()).navigate(R.id.action_loginFragment_to_rendezvousFragment);
             findNavController().navigate(R.id.action_loginFragment_to_signUpFragment)
+        }
+        binding.TextPassword.setOnClickListener(){
+
+            findNavController().navigate(R.id.action_loginFragment_to_passwordForgotFragment)
         }
         return binding.root
     }

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.My_Graduation_Project">
-        <activity android:name=".sign_up.Sign_up_Activity"></activity>
+        <activity android:name=".password_forgot.Password_Forgot_Activity"></activity>
+        <activity android:name=".sign_up.Sign_up_Activity" />
         <activity android:name=".settings.SettingActivity" />
         <activity android:name=".rendezvous_page.RendezvousActivity" />
         <activity android:name=".payment_page.Payment_Activity" />
